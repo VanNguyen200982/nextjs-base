@@ -11,6 +11,7 @@ export async function getStaticProps(context) {
     },
   }
 }
+
 function About(data) {
   return (
     <div>
@@ -19,8 +20,9 @@ function About(data) {
       <Image
         alt="Image Dog"
         src="https://images.dog.ceo/breeds/dhole/n02115913_253.jpg"
-        width={200}
-        height={200}
+        width={128}
+        height={96}
+        layout="fixed"
       />
     </div>
   )
