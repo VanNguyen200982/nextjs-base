@@ -3,36 +3,32 @@ import useSWR from 'swr'
 
 import ImageHero from '../assets/images/hero.jpg'
 
-//const fetcher = (url) => fetch(url).then((res) => res.text())
+const fetcher = (url) => fetch(url).then((res) => res.text())
 
-const fetcher = (query) =>
-  fetch('/api/graphql', {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({ query }),
-  })
-    .then((res) => res.json())
-    .then((json) => json.data)
+// const fetcher = (query) =>
+//   fetch('/api/graphql', {
+//     method: 'POST',
+//     headers: {
+//       'Content-type': 'application/json',
+//     },
+//     body: JSON.stringify({ query }),
+//   })
+//     .then((res) => res.json())
+//     .then((json) => json.data)
 
 const Index = () => {
-	//const { data, error } = useSWR('/api/cookies', fetcher)
-	const { data, error } = useSWR('{ users { name } }', fetcher)
+	const { data, error } = useSWR('/api/cookies', fetcher)
+	//const { data, error } = useSWR('{ users { name } }', fetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
 
-	const { users } = data
+	//const { users } = data
 	
 	return (
 		<>			
-			{/* <p>{`Cookie from response: "${data}"`}</p> */}
-			<div>
-				{users.map((user, i) => (
-					<div key={i}>{user.name}</div>
-				))}
-			</div>
+			<p>{`Cookie from response: "${data}"`}</p>
+			
 			<div className='md:flex bg-white rounded-lg p-24 justify-center'>				
 				<div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
 					<div className="flex-shrink-0">
