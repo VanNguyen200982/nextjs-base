@@ -1,9 +1,6 @@
 import useSWR from 'swr'
 import Person from '../../../components/person'
 
-// Components
-import Header from '../../../components/header'
-
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Index() {
@@ -14,7 +11,6 @@ export default function Index() {
 
   return (
     <>
-      <Header />
       <ul>
         {data.map((p, i) => (
           <Person key={i} person={p} />

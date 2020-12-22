@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
 const Header = () => (
-  <div>
-    <Link href='/'>
-      <a className="link">Home</a>
+  <div className="mb-5">
+    <Link href='/' as='/'>
+      <a className="link p-2 m-2 rounded">Home</a>
     </Link>
-    <Link href='/about'>
-      <a className="link">About</a>
+    <Link href='/about' as='/about'>
+      <a className="link p-2 m-2 rounded">About</a>
     </Link>
     <Link href='/admin'>
-      <a className="link">Admin</a>
+      <a className="link p-2 m-2 rounded">Admin</a>
     </Link>
   </div>
 )
