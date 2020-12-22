@@ -55,7 +55,7 @@ export default function Person() {
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
             <p className="text-lg text-black font-semibold">
-              Erin Lindford
+             {data.name}
             </p>
             <p className="text-gray-500 font-medium">
               Product Engineer
