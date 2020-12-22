@@ -31,6 +31,7 @@ module.exports = {
     extend: {
       borderColor: ['focus-visible'],
       opacity: ['disabled'],
+      borderCollapse: ['hover', 'focus'],
     }
   },
   plugins: [],

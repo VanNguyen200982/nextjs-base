@@ -26,27 +26,27 @@ export default function Person() {
 
   return (
     <>
-      <table>
+      <table className="table-auto border-separate border border-green-800">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Height</th>
-            <th>Mass</th>
-            <th>Hair color</th>
-            <th>Skin color</th>
-            <th>Eye color</th>
-            <th>Gender</th>
+            <th className="border border-green-600">Name</th>
+            <th className="border border-green-600">Height</th>
+            <th className="border border-green-600">Mass</th>
+            <th className="border border-green-600">Hair color</th>
+            <th className="border border-green-600">Skin color</th>
+            <th className="border border-green-600">Eye color</th>
+            <th className="border border-green-600">Gender</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{data.name}</td>
-            <td>{data.height}</td>
-            <td>{data.mass}</td>
-            <td>{data.hair_color}</td>
-            <td>{data.skin_color}</td>
-            <td>{data.eye_color}</td>
-            <td>{data.gender}</td>
+            <td className="border border-green-600">{data.name}</td>
+            <td className="border border-green-600">{data.height}</td>
+            <td className="border border-green-600">{data.mass}</td>
+            <td className="border border-green-600">{data.hair_color}</td>
+            <td className="border border-green-600">{data.skin_color}</td>
+            <td className="border border-green-600">{data.eye_color}</td>
+            <td className="border border-green-600">{data.gender}</td>
           </tr>
         </tbody>
       </table>
