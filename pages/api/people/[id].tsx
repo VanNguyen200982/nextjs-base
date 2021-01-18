@@ -16,7 +16,7 @@ export default function personHandler({ query: { id } }, res, allProducts) {
   // }
 }
 
-export async function getServerSideProps({previewDataProduct}) {
+export async function getServerSideProps({previewDataProduct }) {
   const allProducts = await getAllDatasForProducts(previewDataProduct)
   return {
     props: { allProducts },
