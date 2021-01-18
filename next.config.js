@@ -14,5 +14,3 @@ module.exports = withImages(
     "pagesDir": './src/pages'
   },
 )
-
-
