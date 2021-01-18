@@ -1,0 +1,39 @@
+.slick-next {
+	right: 10px;
+}
+.slick-prev {
+	left: 10px;
+	z-index: 1;
+}
+
+.slick-arrow {
+	&:before {
+		color: gray;
+	}
+}
+
+.logos {	
+	.slick-dots {
+		display: none !important;
+	}
+}
+
+.blog {
+	.slick-next {
+		top: -32px;
+    right: 18px;
+	}
+	.slick-prev {
+		top: -32px;
+    right: 73px;
+    left: auto;
+	}
+	.slick-dots {
+		display: none !important;
+	}
+}
+
+.bg-cover div:first-child {
+	width: 100%;
+	height: 100%;
+}

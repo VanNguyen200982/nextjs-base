@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import Link from 'next/link'
 
-import ImageHero from '../../../assets/images/hero.jpg'
+import ImageHero from '../../../assets/images/girl-baner.png'
 
 const fetcher = async (url) => {
   const res = await fetch(url)

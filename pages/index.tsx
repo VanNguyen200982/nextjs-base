@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import useSWR from 'swr'
 
-import ImageHero from '../assets/images/hero.jpg'
+import ImageHero from '../assets/images/girl-baner.png'
 
 const fetcher = (url) => fetch(url).then((res) => res.text())
 
