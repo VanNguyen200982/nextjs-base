@@ -50,10 +50,6 @@ export default function Person({allProducts}) {
 
   return (
     <>
-       <Layout>
-        <Head>
-          <title> Product Detail</title>
-        </Head>
         {dataProductLength && 
           <div className=''>
             <Banner sex={sexType} navList={navListProduct}/>
@@ -71,7 +67,6 @@ export default function Person({allProducts}) {
             </div>
           </div>
         }
-      </Layout>
     </>
   )
 }
