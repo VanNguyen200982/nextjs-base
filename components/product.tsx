@@ -9,7 +9,7 @@ export default function Product({ product }) {
   
   return (
     <li className={`border border-solid border-gray-200 ${product.node.style_new ? "col-span-3 px-p4 bg-blueless" : "p-p4 bg-white"}`}>
-      <Link href="/admin/person/[id]" as={`/admin/person/${product.node._meta.uid}`}>
+      <Link href="/product/[id]" as={`/product/${product.node._meta.uid}`}>
         <a className={`flex ${product.node.style_new ? "h-full justify-end relative" : "flex-col"}`}>
           {product.node.price_sale &&
             <Button className="px-p4 absolute top-p4 right-p4" rounded="rounded" type="text" text="sale" color="text-white" fontWeight="font-semibold" fontFamily="font-montserrat" bg="bg-blueless" fontSize="text-xss"/>
