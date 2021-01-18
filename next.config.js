@@ -3,13 +3,16 @@ const withLess = require('@zeit/next-less')
 module.exports = withImages(
   {
     images: {
-      domains: ['images.dog.ceo'],
+      domains: ['images.prismic.io'],
     },
     webpack(config, options) {
       return config
     }
   },
-  withLess()
+  withLess(),
+  {
+    "pagesDir": './src/pages'
+  },
 )
 
 
