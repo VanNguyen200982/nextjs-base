@@ -50,11 +50,10 @@ export default function Person({allProducts}) {
 
   return (
     <>
-      <Layout preview={'product'}>
+      
         <Head>
           <title> Product Detail</title>
         </Head>
-      </Layout>
     </>
   )
 }
