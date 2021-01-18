@@ -1,9 +1,7 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
-import Head from 'next/head'
-import '../styles/globals.scss'
-
-import Header from '../components/header'
+import '../assets/styles/globals.scss'
+import '../assets/styles/custom-slide.scss'
 
 // export default class MyApp extends React.Component<AppProps> {
 //   render() {
@@ -20,17 +18,10 @@ import Header from '../components/header'
 //   }
 // }
 
-const CustomAppFC: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const Mobility: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className='container mx-auto my-6'>
-      <Head>
-        <title>Next App</title>
-        <link rel='icon' href='/favicon.ico'/>
-      </Head>
-      <Header />
-      <Component {...pageProps}  />
-    </div>
+    <Component {...pageProps}  />
   )
 }
 
-export default CustomAppFC
+export default Mobility
